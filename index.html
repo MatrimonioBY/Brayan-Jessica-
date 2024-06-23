@@ -23,20 +23,15 @@
             <p>Nos Casamos</p>
         </div>
         <div class="content">
-            <p>Nos complace invitarte a celebrar nuestra boda el <strong>04 de Julio de 2024</strong>.</p>
-            <p><strong>Hora:</strong> 18:00 PM en <strong>Iglesia Coliseo Real Santa Cruz</strong></p>
-            <p><strong>Hora:</strong> 21:00 PM Fiesta en <strong>Condominio Valle Norte II (Recepción Tamarindo)</strong></p>
-        </div>
-        <div class="countdown">
-            <h2>Faltan:</h2>
-            <div id="countdown-timer"></div>
+             <p>Nos complace invitarte a celebrar nuestra boda el <strong>04 de Julio de 2024</strong>.</p>
+            <p>Acompáñanos en este día tan especial y comparte con nosotros la alegría de unir nuestras vidas en matrimonio.</p>
         </div>
         <div class="details">
             <h2>Detalles del Evento</h2>
             <ul>
-                <li><strong>Ceremonia:</strong> 18:00 PM en Iglesia Coliseo Real Santa Cruz</li>
-                <li><strong>Recepción:</strong> 21:00 PM en Condominio Valle Norte II (Recepción Tamarindo)</li>
-                <li><strong>Dirección:</strong> Calle de la Hacienda, 123, Ciudad</li>
+                <li><strong>⛪ Ceremonia:</strong> 18:00 PM en Iglesia Coliseo Real Santa Cruz</li>
+                <li><strong>🎉Recepción:</strong> 21:00 PM en Condominio Valle Norte II (Recepción Tamarindo)</li>
+                <li><strong>Dirección:</strong> Av/Banzer</li>
             </ul>
             <h3>Mapa del Lugar</h3>
             <div id="map"></div>
@@ -109,22 +104,22 @@
         }
 
         // JavaScript for parallax effect
-        document.addEventListener('scroll', function() {
-            const scrollPos = window.scrollY;
-            const windowHeight = window.innerHeight;
-            
-            document.querySelectorAll('.parallax').forEach(parallax => {
-                const parallaxPos = parallax.offsetTop;
-                const parallaxHeight = parallax.offsetHeight;
-                
-                if (scrollPos + windowHeight > parallaxPos && scrollPos < parallaxPos + parallaxHeight) {
-                    const opacity = 1 - (scrollPos - parallaxPos + windowHeight) / (windowHeight + parallaxHeight);
-                    parallax.style.opacity = opacity;
+       document.addEventListener('scroll', function() {
+    const scrollPos = window.scrollY;
+    const windowHeight = window.innerHeight;
+    
+    document.querySelectorAll('.parallax').forEach(parallax => {
+        const parallaxPos = parallax.offsetTop;
+        const parallaxHeight = parallax.offsetHeight;
+        
+        if (scrollPos + windowHeight > parallaxPos && scrollPos < parallaxPos + parallaxHeight) {
+            const opacity = 1 - (scrollPos - parallaxPos + windowHeight) / (windowHeight + parallaxHeight);
+            parallax.style.opacity = opacity;
                 }
             });
         });
 
-        // Countdown Timer
+	// Countdown Timer
         function updateCountdown() {
             const weddingDate = new Date('July 04, 2024 18:00:00').getTime();
             const now = new Date().getTime();
@@ -147,18 +142,6 @@
         const countdownInterval = setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // Initialize Google Maps
-        function initMap() {
-            var location = {lat: -17.780040, lng: -63.167980}; // Coordenadas de Santa Cruz, Bolivia
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
     </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
