@@ -12,6 +12,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #parallax1 {
