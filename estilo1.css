@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
+    background: url('https://example.com/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .parallax {
@@ -17,17 +19,29 @@ body {
 .invitation-container {
     max-width: 800px;
     margin: 50px auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .header h1 {
     margin: 0;
     font-size: 3em;
     color: #555;
+    animation: textPopUp 1s;
+}
+
+@keyframes textPopUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 .header p {
@@ -44,6 +58,13 @@ body {
     font-size: 2em;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
+    margin-top: 20px;
+    animation: slideIn 1s;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
 }
 
 .details ul {
@@ -67,6 +88,7 @@ body {
     margin: 10px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s;
 }
 
 #map {
