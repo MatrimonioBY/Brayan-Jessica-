@@ -10,11 +10,12 @@ body {
 .parallax {
     position: relative;
     height: 300px;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: moveBackground 10s linear infinite;
     transition: opacity 0.5s ease-out;
+    animation: moveBackground 10s linear infinite;
 }
 
 @keyframes moveBackground {
@@ -187,4 +188,13 @@ body {
 
 .music {
     margin: 20px 0;
+}
+
+.countdown {
+    margin: 20px 0;
+}
+
+#countdown-timer {
+    font-size: 2em;
+    color: #555;
 }
