@@ -23,18 +23,20 @@
             <p>Nos Casamos</p>
         </div>
         <div class="content">
-             <p>Nos complace invitarte a celebrar nuestra boda el <strong>04 de Julio de 2024</strong>.</p>
+            <p>Nos complace invitarte a celebrar nuestra boda el <strong>04 de Julio de 2024</strong>.</p>
             <p>Acompáñanos en este día tan especial y comparte con nosotros la alegría de unir nuestras vidas en matrimonio.</p>
         </div>
         <div class="details">
             <h2>Detalles del Evento</h2>
             <ul>
                 <li><strong>⛪ Ceremonia:</strong> 18:00 PM en Iglesia Coliseo Real Santa Cruz</li>
-                <li><strong>🎉Recepción:</strong> 21:00 PM en Condominio Valle Norte II (Recepción Tamarindo)</li>
-                <li><strong>Dirección:</strong> Av/Banzer</li>
+                <li><strong>🎉 Recepción:</strong> 21:00 PM en Condominio Valle Norte II (Recepción Tamarindo)</li>
+                
             </ul>
-            <h3>Mapa del Lugar</h3>
-            <div id="map"></div>
+            <div class="location-buttons">
+                <a href="https://maps.app.goo.gl/b9kfjh1xjzcdL6jQ6" target="_blank" class="btn">Ubicación Ceremonia</a>
+                <a href="https://maps.app.goo.gl/pWmihH7psNCVPEJf9" target="_blank" class="btn">Ubicación Recepción</a>
+            </div>
         </div>
         <div class="gallery">
             <h2>Galería</h2>
@@ -91,35 +93,23 @@
             window.open(`https://wa.me/59172645173?text=${encodeURIComponent(message)}`, '_blank');
         });
 
-        function initMap() {
-            var location = {lat: -25.363, lng: 131.044};
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-
         // JavaScript for parallax effect
-       document.addEventListener('scroll', function() {
-    const scrollPos = window.scrollY;
-    const windowHeight = window.innerHeight;
-    
-    document.querySelectorAll('.parallax').forEach(parallax => {
-        const parallaxPos = parallax.offsetTop;
-        const parallaxHeight = parallax.offsetHeight;
-        
-        if (scrollPos + windowHeight > parallaxPos && scrollPos < parallaxPos + parallaxHeight) {
-            const opacity = 1 - (scrollPos - parallaxPos + windowHeight) / (windowHeight + parallaxHeight);
-            parallax.style.opacity = opacity;
+        document.addEventListener('scroll', function() {
+            const scrollPos = window.scrollY;
+            const windowHeight = window.innerHeight;
+            
+            document.querySelectorAll('.parallax').forEach(parallax => {
+                const parallaxPos = parallax.offsetTop;
+                const parallaxHeight = parallax.offsetHeight;
+                
+                if (scrollPos + windowHeight > parallaxPos && scrollPos < parallaxPos + parallaxHeight) {
+                    const opacity = 1 - (scrollPos - parallaxPos + windowHeight) / (windowHeight + parallaxHeight);
+                    parallax.style.opacity = opacity;
                 }
             });
         });
 
-	// Countdown Timer
+        // Countdown Timer
         function updateCountdown() {
             const weddingDate = new Date('July 04, 2024 18:00:00').getTime();
             const now = new Date().getTime();
@@ -141,10 +131,6 @@
 
         const countdownInterval = setInterval(updateCountdown, 1000);
         updateCountdown();
-
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
     </script>
 </body>
 </html>
