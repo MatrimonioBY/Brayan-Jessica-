@@ -102,6 +102,22 @@
                 map: map
             });
         }
+
+        // JavaScript for parallax effect
+        document.addEventListener('scroll', function() {
+            const scrollPos = window.scrollY;
+            const windowHeight = window.innerHeight;
+            
+            document.querySelectorAll('.parallax').forEach(parallax => {
+                const parallaxPos = parallax.offsetTop;
+                const parallaxHeight = parallax.offsetHeight;
+                
+                if (scrollPos + windowHeight > parallaxPos && scrollPos < parallaxPos + parallaxHeight) {
+                    const opacity = 1 - (scrollPos - parallaxPos + windowHeight) / (windowHeight + parallaxHeight);
+                    parallax.style.opacity = opacity;
+                }
+            });
+        });
     </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
