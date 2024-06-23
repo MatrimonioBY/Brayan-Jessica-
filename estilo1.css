@@ -4,14 +4,15 @@ body {
     padding: 0;
     background-color: #f7f7f7;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .parallax {
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 200px;
+    width: 100%;
 }
 
 #parallax1 {
@@ -31,7 +32,7 @@ body {
 }
 
 .invitation-container {
-    max-width: 90%;
+    width: 95%;
     margin: 20px auto;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -48,7 +49,7 @@ body {
 
 .header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 1.8em;
     color: #555;
     animation: textPopUp 1s;
 }
@@ -59,17 +60,17 @@ body {
 }
 
 .header p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #888;
 }
 
 .content p {
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 10px 0;
 }
 
 .details h2, .rsvp h2, .gallery h2, .timeline h2, .music h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
     margin-top: 20px;
@@ -84,7 +85,9 @@ body {
 .details ul, .timeline ul {
     list-style: none;
     padding: 0;
-    font-size: 1.2em;
+    font-size: 1em;
+    text-align: left;
+    margin-left: 10%;
 }
 
 .details li, .timeline li {
@@ -107,7 +110,7 @@ body {
 
 #map {
     width: 100%;
-    height: 300px;
+    height: 200px;
     margin: 20px 0;
 }
 
@@ -154,7 +157,7 @@ body {
 .timeline ul li {
     position: relative;
     margin: 0 0 20px 0;
-    padding: 20px;
+    padding: 15px;
     background: rgba(255, 255, 255, 0.9);
     border-left: 3px solid #ddd;
     border-radius: 5px;
@@ -165,7 +168,7 @@ body {
 .timeline ul li::before {
     content: '';
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: -10px;
     width: 20px;
     height: 20px;
@@ -174,45 +177,6 @@ body {
     box-shadow: 0 0 0 3px #fff;
 }
 
-/* Media queries para dispositivos móviles */
-@media (max-width: 768px) {
-    .parallax {
-        background-attachment: scroll;
-        height: 200px;
-    }
-
-    .invitation-container {
-        max-width: 95%;
-        margin: 10px auto;
-        padding: 10px;
-    }
-
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .header p {
-        font-size: 1.2em;
-    }
-
-    .content p {
-        font-size: 1em;
-    }
-
-    .details h2, .rsvp h2, .gallery h2, .timeline h2, .music h2 {
-        font-size: 1.5em;
-    }
-
-    .gallery .images img {
-        width: 100%;
-    }
-
-    #map {
-        height: 200px;
-    }
-
-    .timeline ul li {
-        padding: 15px;
-        font-size: 1em;
-    }
+.music {
+    margin: 20px 0;
 }
