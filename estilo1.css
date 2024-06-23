@@ -3,17 +3,31 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
-    background: url('https://example.com/background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
+    scroll-behavior: smooth;
 }
 
 .parallax {
-    background-image: url('https://example.com/your-image.jpg');
-    height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 500px;
+}
+
+#parallax1 {
+    background-image: url('background1.jpg');
+}
+
+#parallax2 {
+    background-image: url('background2.jpg');
+}
+
+#parallax3 {
+    background-image: url('background3.jpg');
+}
+
+#parallax4 {
+    background-image: url('background4.jpg');
 }
 
 .invitation-container {
@@ -54,7 +68,7 @@ body {
     padding: 10px 0;
 }
 
-.details h2, .rsvp h2, .gallery h2 {
+.details h2, .rsvp h2, .gallery h2, .timeline h2, .music h2 {
     font-size: 2em;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
@@ -67,13 +81,13 @@ body {
     to { transform: translateX(0); opacity: 1; }
 }
 
-.details ul {
+.details ul, .timeline ul {
     list-style: none;
     padding: 0;
     font-size: 1.2em;
 }
 
-.details li {
+.details li, .timeline li {
     padding: 5px 0;
 }
 
@@ -131,3 +145,14 @@ body {
 .rsvp button:hover {
     background-color: #333;
 }
+
+.timeline ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.timeline ul li {
+    position: relative;
+    margin: 0 0 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
