@@ -11,11 +11,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    height: 400px;
 }
 
 #parallax1 {
@@ -52,7 +48,7 @@ body {
 
 .header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
     color: #555;
     animation: textPopUp 1s;
 }
@@ -63,17 +59,17 @@ body {
 }
 
 .header p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #888;
 }
 
 .content p {
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 10px 0;
 }
 
 .details h2, .rsvp h2, .gallery h2, .timeline h2, .music h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
     margin-top: 20px;
@@ -88,7 +84,7 @@ body {
 .details ul, .timeline ul {
     list-style: none;
     padding: 0;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .details li, .timeline li {
@@ -111,7 +107,7 @@ body {
 
 #map {
     width: 100%;
-    height: 200px;
+    height: 300px;
     margin: 20px 0;
 }
 
@@ -181,8 +177,8 @@ body {
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
     .parallax {
-        height: 200px;
         background-attachment: scroll;
+        height: 200px;
     }
 
     .invitation-container {
@@ -192,19 +188,19 @@ body {
     }
 
     .header h1 {
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     .header p {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .content p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .details h2, .rsvp h2, .gallery h2, .timeline h2, .music h2 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .gallery .images img {
@@ -212,11 +208,11 @@ body {
     }
 
     #map {
-        height: 150px;
+        height: 200px;
     }
 
     .timeline ul li {
-        padding: 10px;
-        font-size: 0.9em;
+        padding: 15px;
+        font-size: 1em;
     }
 }
