@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="music">
-        <h2>Nuestra Canción</h2>
+        <h2>Nuestra Canción "Escuchala"</h2>
         <audio controls autoplay>
             <source src="nuestra-cancion.mp3" type="audio/mpeg">
             Tu navegador no soporta la reproducción de audio.
@@ -39,9 +39,9 @@
         <div class="gallery">
             <h2>Galería</h2>
             <div class="images">
-                <img src="photo1.jpg" alt="Foto 1">
-                <img src="photo2.jpg" alt="Foto 2">
-                <img src="photo3.jpg" alt="Foto 3">
+                <img src="photo4.jpg" alt="Foto 1">
+                <img src="photo5.jpg" alt="Foto 2">
+                <img src="photo6.jpg" alt="Foto 3">
             </div>
         </div>
         <div class="rsvp">
@@ -49,8 +49,6 @@
             <form id="rsvp-form">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
                 <label for="guests">Número de Invitados:</label>
                 <input type="number" id="guests" name="guests" required>
                 <button type="submit">Enviar</button>
@@ -88,10 +86,9 @@
         document.getElementById('rsvp-form').addEventListener('submit', function(event) {
             event.preventDefault();
             var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
             var guests = document.getElementById('guests').value;
-            var message = `Hola, soy ${name}. Mi correo es ${email}. Confirmo la asistencia de ${guests} personas a la boda.`;
-            window.open(`https://wa.me/1234567890?text=${encodeURIComponent(message)}`, '_blank');
+            var message = `Hola, soy ${name}. Confirmo la asistencia de ${guests} personas a la boda.`;
+            window.open(`https://wa.me/59172645173?text=${encodeURIComponent(message)}`, '_blank');
         });
 
         function initMap() {
