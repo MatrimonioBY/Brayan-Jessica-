@@ -9,13 +9,12 @@ body {
 
 .parallax {
     position: relative;
-    height: 300px;
-    background-attachment: fixed;
+    height: 200px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: opacity 0.5s ease-out;
     animation: moveBackground 10s linear infinite;
+    transition: opacity 0.5s ease-out;
 }
 
 @keyframes moveBackground {
@@ -103,15 +102,15 @@ body {
     padding: 5px 0;
 }
 
-.gallery .images {
+.gallery {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .gallery .images img {
-    width: 90%;
-    margin: 10px 0;
+    width: 45%;
+    margin: 5px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1.5s;
