@@ -15,19 +15,19 @@ body {
 }
 
 #parallax1 {
-    background-image: url('background1.jpg');
+    background-image: url('foto1.jpg');
 }
 
 #parallax2 {
-    background-image: url('background2.jpg');
+    background-image: url('foto2.jpg');
 }
 
 #parallax3 {
-    background-image: url('background3.jpg');
+    background-image: url('foto3.jpg');
 }
 
 #parallax4 {
-    background-image: url('background4.jpg');
+    background-image: url('foto1.jpg');
 }
 
 .invitation-container {
