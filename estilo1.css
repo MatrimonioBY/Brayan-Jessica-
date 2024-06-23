@@ -14,7 +14,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: moveBackground 10s linear infinite;
     transition: opacity 0.5s ease-out;
+}
+
+@keyframes moveBackground {
+    0% { background-position: center top; }
+    50% { background-position: center bottom; }
+    100% { background-position: center top; }
 }
 
 #parallax1 {
