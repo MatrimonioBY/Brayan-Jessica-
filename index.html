@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilo1.css">
 </head>
 <body>
-    <div class="parallax"></div>
+    <div class="parallax" id="parallax1"></div>
 
     <div class="invitation-container">
         <div class="header">
@@ -31,9 +31,9 @@
         <div class="gallery">
             <h2>Galería</h2>
             <div class="images">
-                <img src="foto1.jpg" alt="Foto 1">
-                <img src="foto2.jpg" alt="Foto 2">
-                <img src="foto3.jpeg" alt="Foto 3">
+                <img src="photo1.jpg" alt="Foto 1">
+                <img src="photo2.jpg" alt="Foto 2">
+                <img src="photo3.jpg" alt="Foto 3">
             </div>
         </div>
         <div class="rsvp">
@@ -50,7 +50,41 @@
         </div>
     </div>
 
-    <div class="parallax"></div>
+    <div class="parallax" id="parallax2"></div>
+
+    <div class="timeline">
+        <h2>Nuestra Historia</h2>
+        <ul>
+            <li>
+                <h3>Primavera 2015</h3>
+                <p>Nos conocimos en un parque durante un paseo.</p>
+            </li>
+            <li>
+                <h3>Verano 2017</h3>
+                <p>Empezamos a salir y compartimos muchas aventuras juntos.</p>
+            </li>
+            <li>
+                <h3>Otoño 2019</h3>
+                <p>Decidimos comprometernos y planear nuestra boda.</p>
+            </li>
+            <li>
+                <h3>Invierno 2024</h3>
+                <p>Nos casamos y comenzamos un nuevo capítulo juntos.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="parallax" id="parallax3"></div>
+
+    <div class="music">
+        <h2>Nuestra Canción</h2>
+        <audio controls>
+            <source src="nuestra-cancion.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+    </div>
+
+    <div class="parallax" id="parallax4"></div>
 
     <script>
         document.getElementById('rsvp-form').addEventListener('submit', function(event) {
