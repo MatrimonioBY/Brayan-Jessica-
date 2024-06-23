@@ -173,3 +173,40 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 0 3px #fff;
 }
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .parallax {
+        height: 300px;
+    }
+
+    .invitation-container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1.2em;
+    }
+
+    .content p {
+        font-size: 1em;
+    }
+
+    .details h2, .rsvp h2, .gallery h2, .timeline h2, .music h2 {
+        font-size: 1.5em;
+    }
+
+    .gallery .images img {
+        width: 80%;
+    }
+
+    #map {
+        height: 200px;
+    }
+}
