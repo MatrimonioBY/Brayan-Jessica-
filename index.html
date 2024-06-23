@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="music">
-        <h2>Nuestra Canción "Escuchala"</h2>
+        <h2>Nuestra Canción "Escúchala"</h2>
         <audio controls autoplay>
             <source src="nuestra-cancion.mp3" type="audio/mpeg">
             Tu navegador no soporta la reproducción de audio.
@@ -87,7 +87,7 @@
             event.preventDefault();
             var name = document.getElementById('name').value;
             var guests = document.getElementById('guests').value;
-            var message = `Hola, soy ${name}. Confirmo la asistencia de ${guests} personas a la boda.`;
+            var message = `Hola, soy ${name}. Confirmo la asistencia de ${guests} personas a la boda. Aquí está el enlace a la invitación: https://matrimonioby.github.io/Brayan-Jessica-/`;
             window.open(`https://wa.me/59172645173?text=${encodeURIComponent(message)}`, '_blank');
         });
 
