@@ -54,10 +54,8 @@
         <div class="rsvp">
             <h2>Confirma tu Asistencia</h2>
             <form id="rsvp-form">
-                <label for="name">Nombre completo:</label>
+                <label for="name">Nombre Completo:</label>
                 <input type="text" id="name" name="name" required>
-                <label for="guests">Número de Invitados:</label>
-                <input type="number" id="guests" name="guests" required>
                 <button type="submit">Enviar</button>
             </form>
         </div>
@@ -95,7 +93,7 @@
             event.preventDefault();
             var name = document.getElementById('name').value;
             var guests = document.getElementById('guests').value;
-            var message = `Estimados, soy ${name}. Tengo el placer de confirmar la asistencia de ${guests} personas a su boda. Aquí está el enlace a la invitación: https://matrimonioby.github.io/Brayan-Jessica-/. ¡Muchas gracias por la invitación!`;
+            var message = `Estimados, soy ${name}. Tengo el placer de confirmar la asistencia de su boda. Aquí está el enlace a la invitación: https://matrimonioby.github.io/Brayan-Jessica-/. ¡Muchas gracias por la invitación!`;
             window.open(`https://wa.me/59168826754?text=${encodeURIComponent(message)}`, '_blank');
         });
 
