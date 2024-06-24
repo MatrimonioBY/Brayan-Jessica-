@@ -79,7 +79,7 @@ body {
 
 .details h2, .rsvp h2, .gallery h2, .timeline h2, .music h2 {
     font-size: 1.5em;
-    border-bottom: 1px solid #6984A6;
+    border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
     margin-top: 20px;
     animation: slideIn 1s;
