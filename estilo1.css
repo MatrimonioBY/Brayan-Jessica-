@@ -205,7 +205,7 @@ body {
     border: 2px solid #ffaf7a; /* Color de borde llamativo */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: textScroll 10s linear infinite, fadeIn 2s;
+    animation: textScroll 20s linear infinite, fadeIn 2s;
 }
 
 .bible-verse h2 {
