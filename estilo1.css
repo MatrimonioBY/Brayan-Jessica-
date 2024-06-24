@@ -201,8 +201,8 @@ body {
 .bible-verse {
     margin: 20px 0;
     padding: 20px;
-    background-color: #f8f8f8;
-    border: 2px solid #ddd;
+    background-color: #fff3e6; /* Color de fondo suave */
+    border: 2px solid #ffaf7a; /* Color de borde llamativo */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     animation: textScroll 10s linear infinite, fadeIn 2s;
@@ -211,12 +211,12 @@ body {
 .bible-verse h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #d85a7f;
+    color: #d85a7f; /* Color de texto */
 }
 
 .bible-verse p {
     font-size: 1.2em;
-    color: #d85a7f;
+    color: #d85a7f; /* Color de texto */
     animation: textBlink 1.5s infinite;
 }
 
