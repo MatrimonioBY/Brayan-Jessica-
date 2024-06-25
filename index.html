@@ -92,7 +92,6 @@
         document.getElementById('rsvp-form').addEventListener('submit', function(event) {
             event.preventDefault();
             var name = document.getElementById('name').value;
-            var guests = document.getElementById('guests').value;
             var message = `Estimados, soy ${name}. Tengo el placer de confirmar la asistencia de su boda. Aquí está el enlace a la invitación: https://matrimonioby.github.io/Brayan-Jessica-/. ¡Muchas gracias por la invitación!`;
             window.open(`https://wa.me/59168826754?text=${encodeURIComponent(message)}`, '_blank');
         });
